@@ -714,7 +714,7 @@ template {
     border: none;
     border-radius: 50%;
     cursor: pointer;
-    background-image: url(/src/img/burger.svg); }
+    background-image: url(./static/burger.svg); }
   .header__service-list {
     display: flex;
     justify-content: space-between;
