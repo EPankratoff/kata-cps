@@ -1015,6 +1015,7 @@ template {
 
 @media (min-width: 1336px) {
   .service__page-navigation {
+    max-width: 1064px;
     flex-wrap: wrap;
     padding-top: 0; } }
 
