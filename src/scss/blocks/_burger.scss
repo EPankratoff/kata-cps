@@ -87,6 +87,20 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .site-menu {
+    &--open {
+      left: 0;
+      margin-left: 0;
+      padding: 25px;
+    }
+
+    &__logo {
+      left: 100px;
+    }
+  }
+}
+
 @media (min-width: $desktop-width) {
   .site-menu {
     display: flex;
@@ -114,20 +128,6 @@
 
     &__search-button {
       margin-left: auto;
-    }
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .site-menu {
-    &--open {
-      left: 0;
-      margin-left: 0;
-      padding: 25px;
-    }
-
-    &__logo {
-      left: 100px;
     }
   }
 }

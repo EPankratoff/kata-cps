@@ -833,6 +833,14 @@ template {
     .site-menu__toggle-lang--active {
       color: #7e7e82; }
 
+@media (min-width: 768px) {
+  .site-menu--open {
+    left: 0;
+    margin-left: 0;
+    padding: 25px; }
+  .site-menu__logo {
+    left: 100px; } }
+
 @media (min-width: 1336px) {
   .site-menu {
     display: flex;
@@ -853,14 +861,6 @@ template {
       display: none; }
     .site-menu__search-button {
       margin-left: auto; } }
-
-@media (min-width: 768px) {
-  .site-menu--open {
-    left: 0;
-    margin-left: 0;
-    padding: 25px; }
-  .site-menu__logo {
-    left: 100px; } }
 
 .button {
   width: 40px;
