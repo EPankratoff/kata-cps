@@ -1,0 +1,133 @@
+.site-menu {
+  position: absolute;
+  top: 0;
+  left: -320px;
+  bottom: 0;
+  width: 320px;
+  height: fit-content;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 25px 15px;
+  background-color: #ffffff;
+
+  &--open {
+    left: 0;
+    z-index: 2;
+    transition: left 0.7s cubic-bezier(0.215, 0.61, 0.355, 1);
+    box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2);
+  }
+
+  &__logo {
+    position: absolute;
+    top: 15px;
+    left: 70px;
+  }
+
+  &__top-wrapper {
+    display: flex;
+    margin-bottom: 15px;
+    justify-content: space-between;
+  }
+
+  &__navigation {
+    margin-bottom: 20px;
+  }
+
+  &__contact-list {
+    display: flex;
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__contact-item {
+    margin-right: 15px;
+  }
+
+  &__bottom-wrapper {
+    margin-top: 240px;
+  }
+
+  &__email {
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+  }
+
+  &__phone {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: bold;
+  }
+
+  &__toggle-lang-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__toggle-lang {
+    margin: 0;
+    margin-right: 7px;
+    padding: 0;
+    font-size: inherit;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: none;
+
+    &--active {
+      color: #7e7e82;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-menu {
+    display: flex;
+    position: relative;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    width: 375px;
+    padding: 35px 25px 25px;
+    background-color: #ffffff;
+    transition: none;
+
+    &__logo {
+      top: 30px;
+      left: 25px;
+    }
+
+    &__top-wrapper {
+      width: 100%;
+    }
+
+    &__nav-toggle-cross {
+      display: none;
+    }
+
+    &__search-button {
+      margin-left: auto;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .site-menu {
+    &--open {
+      left: 0;
+      margin-left: 0;
+      padding: 25px;
+    }
+
+    &__logo {
+      left: 100px;
+    }
+  }
+}

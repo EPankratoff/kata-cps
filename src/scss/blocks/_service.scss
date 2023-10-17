@@ -1,0 +1,46 @@
+.service {
+  &__page-navigation {
+    display: flex;
+    overflow: auto;
+    margin-bottom: 8px;
+    padding-left: 15px;
+
+    &::-webkit-scrollbar {
+      width: 0;
+      background-color: transparent;
+    }
+
+    &_link {
+      font-size: 16px;
+      white-space: nowrap;
+      display: flex;
+      color: #7e7e82;
+      border: 2px solid transparent;
+      border-radius: 6px;
+      padding: 5px 14px;
+
+      &--active {
+        border-color: #b8ffec;
+        background-color: #ffffff;
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .service {
+    &__page-navigation {
+      padding-top: 7px;
+      padding-left: 24px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .service {
+    &__page-navigation {
+      flex-wrap: wrap;
+      padding-top: 0;
+    }
+  }
+}

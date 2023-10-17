@@ -1,0 +1,22 @@
+.more-button {
+  display: flex;
+  font: inherit;
+  border: none;
+  background-color: transparent;
+  background-image: url('/src/img/more.svg');
+  background-repeat: no-repeat;
+  padding: 0;
+  padding-left: 33px;
+  cursor: pointer;
+  outline: none;
+
+  &--less {
+    background-image: url('../img/less.svg');
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .more-button {
+    margin-bottom: 0;
+  }
+}

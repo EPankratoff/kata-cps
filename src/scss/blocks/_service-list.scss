@@ -1,0 +1,45 @@
+.service-list {
+  list-style: none;
+
+  &--main {
+    display: none;
+  }
+
+  &__link {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  &__icon {
+    &:hover {
+      opacity: 0.8;
+      transition: 0.3s;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .service-list {
+    &--main {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__item--repair {
+      margin-right: 20px;
+    }
+
+    &__link {
+      display: flex;
+      align-items: center;
+    }
+
+    &__icon {
+      margin-left: 8px;
+    }
+  }
+}

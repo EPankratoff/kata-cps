@@ -1,0 +1,113 @@
+.prices {
+  &__wrapper {
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 15px;
+  }
+
+  &__title {
+    margin: 0;
+    padding: 15px 1px;
+    border-top: 1px solid #d9fff5;
+    color: #7e7e82;
+    text-transform: uppercase;
+    background-image: linear-gradient(61deg, #f8f8f8 0%, #ffffff 98.61%);
+  }
+
+  &__proposal {
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 0;
+    font-size: 14px;
+    padding: 0px 23px 0px 18px;
+    line-height: 20px;
+  }
+
+  &__proposal-link {
+    position: relative;
+    // font-weight: bold;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    padding-left: 15px;
+    padding-top: 3px;
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+
+    &::after {
+      position: absolute;
+      content: '';
+      bottom: 8px;
+      // right: 187px;
+      width: 9px;
+      height: 9px;
+      border: 3px solid #ff3e79;
+      border-bottom: none;
+      border-left: none;
+      border-radius: 2px;
+      transform: rotate(45deg);
+    }
+  }
+  &__table {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .prices {
+    &__wrapper {
+      padding-top: 33px;
+      padding-left: 20px;
+    }
+
+    &__title {
+      padding: 18px 2px;
+    }
+    &__proposal {
+      max-width: 465px;
+      padding-top: 24px;
+      padding-left: 23px;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0.2px;
+
+      &-link {
+        padding-top: 0;
+        padding-left: 23px;
+
+        &::after {
+          bottom: 7px;
+          // right: 423px;
+        }
+      }
+    }
+    &__table {
+      display: table;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .prices {
+    &__wrapper {
+      padding-top: 50px;
+      padding-left: 32px;
+    }
+
+    &__title {
+      padding-left: 0;
+    }
+
+    &__proposal {
+      padding-left: 0;
+      padding-top: 33px;
+
+      &-link {
+        padding-left: 0;
+      }
+    }
+  }
+}

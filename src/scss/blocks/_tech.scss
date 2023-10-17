@@ -1,0 +1,54 @@
+.tech {
+  &__wrapper {
+    padding-left: 15px;
+  }
+  &__title {
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 15px 1px;
+    border-top: 1px solid #d9fff5;
+    color: #7e7e82;
+    text-transform: uppercase;
+    background-image: linear-gradient(61deg, #f8f8f8 0%, #ffffff 98.61%);
+    // transform: matrix(-1, 0, 0, 1, 0, 0);
+  }
+
+  &__more-button {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .tech {
+    &__wrapper {
+      padding-top: 46px;
+    }
+
+    &__title {
+      padding-left: 24px;
+    }
+
+    &__more-button {
+      display: block;
+      margin-top: 10px;
+      position: relative;
+      left: 24px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .tech {
+    &__wrapper {
+      padding-top: 64px;
+    }
+
+    &__title {
+      padding-left: 32px;
+    }
+
+    &__more-button {
+      left: 30px;
+    }
+  }
+}
