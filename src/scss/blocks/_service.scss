@@ -39,6 +39,7 @@
 @media (min-width: $desktop-width) {
   .service {
     &__page-navigation {
+      max-width: 1064px;
       flex-wrap: wrap;
       padding-top: 0;
     }
