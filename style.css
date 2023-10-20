@@ -785,6 +785,7 @@ template {
     left: 0;
     z-index: 2;
     position: fixed;
+    height: 100%;
     width: 100%;
     transition: left 0.7s cubic-bezier(0.215, 0.61, 0.355, 1);
     box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2); }
