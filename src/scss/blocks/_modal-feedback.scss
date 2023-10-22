@@ -24,6 +24,18 @@
     padding: 0;
     font-size: 24px;
     line-height: 32px;
+    &::before {
+      display: inline-block;
+      content: '';
+      width: 4px;
+      height: 40px;
+      border: 1px solid #41f6d7;
+      position: relative;
+      background-color: #41f6d7;
+      border-radius: 4px;
+      left: -15px;
+      top: 7px;
+    }
   }
 }
 
@@ -94,7 +106,28 @@
 }
 
 @media (min-width: $tablet-width) {
+  .feedback {
+    &__title {
+      margin-top: 0;
+      &::before {
+        left: -32px;
+        top: 7px;
+      }
+    }
+  }
   .feedback-form__button {
     margin-left: 69%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback {
+    &__title {
+      margin-top: 0;
+      &::before {
+        left: -32px;
+        top: 7px;
+      }
+    }
   }
 }
