@@ -693,6 +693,7 @@ template {
   width: 100%;
   height: 88px;
   box-sizing: border-box;
+  border-bottom: 1px solid #d9fff5;
   margin: 0 auto;
   padding: 0px 15px;
   background-color: var(--b_header); }
@@ -772,7 +773,7 @@ template {
   top: 0;
   left: -320px;
   bottom: 0;
-  width: 320px;
+  min-width: 320px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -787,6 +788,7 @@ template {
     position: fixed;
     height: 100%;
     width: 100%;
+    max-width: 360px;
     transition: left 0.7s cubic-bezier(0.215, 0.61, 0.355, 1);
     box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2); }
   .site-menu__logo {
@@ -1670,6 +1672,17 @@ template {
     padding: 0;
     font-size: 24px;
     line-height: 32px; }
+    .call__title::before {
+      display: inline-block;
+      content: '';
+      width: 4px;
+      height: 40px;
+      border: 1px solid #41f6d7;
+      position: relative;
+      background-color: #41f6d7;
+      border-radius: 4px;
+      left: -15px;
+      top: 7px; }
 
 @media (min-width: 768px) {
   .call {
@@ -1714,9 +1727,26 @@ template {
   margin-left: 58%; }
 
 @media (min-width: 768px) {
+  .call__title {
+    margin-top: 0; }
+    .call__title::before {
+      left: -25px;
+      top: 7px; }
   .call-form__button {
     margin-left: 69%;
     left: -22px; } }
+
+@media (min-width: 1336px) {
+  .call__title {
+    margin-top: 0; }
+    .call__title::before {
+      left: -25px;
+      top: 7px; }
+  .call__button-cross--open {
+    position: absolute;
+    display: block;
+    left: -73px;
+    top: 32px; } }
 
 .feedback {
   position: fixed;
@@ -1741,6 +1771,17 @@ template {
     padding: 0;
     font-size: 24px;
     line-height: 32px; }
+    .feedback__title::before {
+      display: inline-block;
+      content: '';
+      width: 4px;
+      height: 40px;
+      border: 1px solid #41f6d7;
+      position: relative;
+      background-color: #41f6d7;
+      border-radius: 4px;
+      left: -15px;
+      top: 7px; }
 
 @media (min-width: 768px) {
   .feedback {
@@ -1792,8 +1833,20 @@ template {
   left: -22px; }
 
 @media (min-width: 768px) {
+  .feedback__title {
+    margin-top: 0; }
+    .feedback__title::before {
+      left: -32px;
+      top: 7px; }
   .feedback-form__button {
     margin-left: 69%; } }
+
+@media (min-width: 1336px) {
+  .feedback__title {
+    margin-top: 0; }
+    .feedback__title::before {
+      left: -32px;
+      top: 7px; } }
 
 @media (min-width: 1336px) {
   .navigation {
