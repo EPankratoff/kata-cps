@@ -2,7 +2,7 @@
   &__title {
     margin: 0;
     margin-bottom: 15px;
-    padding: 16px 1px;
+    padding: 16px 16px;
     border-top: 1px solid #d9fff5;
     color: #7e7e82;
     text-transform: uppercase;
@@ -10,13 +10,13 @@
   }
 
   &__brand-list {
-    display: none;
+    // display: none;
   }
 
   &__wrapper {
     width: 100%;
-    padding-top: 33px;
-    padding-left: 15px;
+    padding-top: 19px;
+    // padding-left: 15px;
     box-sizing: border-box;
   }
 
@@ -49,7 +49,7 @@
       display: block;
       margin-top: 10px;
       position: relative;
-      top: 14px;
+      // top: 14px;
       left: 24px;
     }
   }

@@ -2,10 +2,11 @@
   width: 100%;
   box-sizing: border-box;
   margin: 0 auto;
-  padding-right: 15px;
+  // padding-right: 15px;
 
   &__left-column {
     padding-left: 15px;
+    padding-right: 15px;
   }
   &__text {
     margin: 0;

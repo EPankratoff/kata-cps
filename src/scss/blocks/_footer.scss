@@ -1,4 +1,5 @@
 .footer {
+  margin-top: 46px;
   background-color: $bg-color-1;
   padding-top: 15px;
   border-top: 1px solid $deco-element-outline;
@@ -32,6 +33,7 @@
 
 @media (min-width: $tablet-width) {
   .footer {
+    margin-top: 52px;
     &__wrapper {
       width: 100%;
       display: grid;

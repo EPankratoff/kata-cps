@@ -12,6 +12,7 @@
   z-index: 3;
 
   &--open {
+    z-index: 7;
     right: 0;
     transition: right 0.7s;
     box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2);

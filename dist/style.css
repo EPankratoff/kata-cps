@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-weight: normal;
   font-family: 'TT Lakes';
@@ -683,7 +684,7 @@ template {
     left: 0;
     background-color: #fff;
     opacity: 0.9605;
-    z-index: 2; }
+    z-index: 6; }
 
 .header {
   position: relative;
@@ -723,6 +724,14 @@ template {
   .header__contact-list {
     display: none; }
 
+.contact-list__link--phone {
+  background-color: transparent;
+  cursor: pointer; }
+
+.contact-list__link--message {
+  background-color: transparent;
+  cursor: pointer; }
+
 @media (min-width: 768px) {
   .header {
     padding: 0 25px; }
@@ -754,6 +763,8 @@ template {
   .contact-list__item {
     position: relative;
     left: 12px; }
+  .contact-list__link {
+    background-color: transparent; }
   .contact-list__icon:hover {
     opacity: 0.5;
     transition: 0.3s; } }
@@ -784,7 +795,7 @@ template {
   background-color: #ffffff; }
   .site-menu--open {
     left: 0;
-    z-index: 2;
+    z-index: 10;
     position: fixed;
     height: 100%;
     width: 100%;
@@ -809,19 +820,25 @@ template {
     list-style: none; }
   .site-menu__contact-item {
     margin-right: 15px; }
+  .site-menu__contact-link {
+    background-color: transparent;
+    cursor: pointer; }
   .site-menu__bottom-wrapper {
     margin-top: 240px; }
   .site-menu__email {
-    margin: 0;
-    margin-bottom: 10px;
-    padding: 0; }
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.2px;
+    color: #1b1c21;
+    margin: 0 0 12px 0; }
   .site-menu__phone {
-    margin: 0;
-    padding: 0;
-    margin-bottom: 10px;
+    display: block;
+    font-weight: 700;
     font-size: 24px;
-    line-height: 32px;
-    font-weight: bold; }
+    letter-spacing: -0.6px;
+    color: #1b1c21;
+    margin: 0 26px 10px 0; }
   .site-menu__toggle-lang-list {
     display: flex;
     margin: 0;
@@ -834,7 +851,13 @@ template {
     font-size: inherit;
     text-transform: uppercase;
     background-color: transparent;
-    border: none; }
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    border: none;
+    cursor: pointer; }
     .site-menu__toggle-lang--active {
       color: #7e7e82; }
 
@@ -842,8 +865,7 @@ template {
   .site-menu--open {
     width: 320px;
     left: 0;
-    margin-left: 0;
-    padding: 25px; }
+    margin-left: 0; }
   .site-menu__logo {
     left: 100px; } }
 
@@ -854,7 +876,7 @@ template {
     top: 0;
     left: 0;
     box-sizing: border-box;
-    width: 375px;
+    min-width: 306px;
     padding: 35px 25px 25px;
     background-color: #ffffff;
     transition: none; }
@@ -1014,6 +1036,14 @@ template {
       border-color: #b8ffec;
       background-color: #ffffff; }
 
+.service__page-navigation .gradient-right {
+  position: absolute;
+  right: 0;
+  background: linear-gradient(270deg, #f8f8f8 16.84%, rgba(248, 248, 248, 0) 100%);
+  width: 24px;
+  height: 40px;
+  z-index: 5; }
+
 @media (min-width: 768px) {
   .service__page-navigation {
     padding-top: 7px;
@@ -1028,10 +1058,10 @@ template {
 .about-us {
   width: 100%;
   box-sizing: border-box;
-  margin: 0 auto;
-  padding-right: 15px; }
+  margin: 0 auto; }
   .about-us__left-column {
-    padding-left: 15px; }
+    padding-left: 15px;
+    padding-right: 15px; }
   .about-us__text {
     margin: 0;
     padding: 0;
@@ -1112,19 +1142,37 @@ template {
   .more-button {
     margin-bottom: 0; } }
 
-@media (min-width: 768px) {
-  .swiper-container--brand,
-  .swiper-container--prices {
-    display: none; } }
-
 .swiper-container--brand {
   overflow: hidden;
   padding-bottom: 27px;
-  padding-right: 9px;
+  padding-left: 10px;
+  padding-right: 10px;
   box-sizing: border-box; }
+
+.swiper-container--brand .gradient-right {
+  width: 24px;
+  height: 75px;
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  background: linear-gradient(270deg, #f8f8f8 16.84%, rgba(248, 248, 248, 0) 100%); }
 
 /*****/
 @media (min-width: 768px) {
+  .swiper-container--brand {
+    padding-bottom: 0; }
+  .swiper-wrapper--brand {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(239px, 1fr));
+    row-gap: 15px;
+    -moz-column-gap: 15px;
+         column-gap: 15px;
+    box-sizing: border-box;
+    height: 170px;
+    margin: 0 auto;
+    overflow-y: hidden;
+    padding-left: 0;
+    transform: translate3d(0px, 0, 0) !important; }
   .swiper-wrapper--type {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -1147,6 +1195,10 @@ template {
   background-color: #ffffff;
   border: 1px solid #eaeaea;
   border-radius: 5px; }
+
+@media (min-width: 768px) {
+  .swiper-slide--brand {
+    width: 100% !important; } }
 
 .swiper-slide__link--brand {
   position: relative;
@@ -1189,9 +1241,18 @@ template {
 
 .swiper-container--type {
   overflow: hidden;
+  padding-left: 10px;
   padding-bottom: 32px;
-  padding-right: 9px;
+  padding-right: 10px;
   box-sizing: border-box; }
+
+.swiper-container--type .gradient-right {
+  width: 24px;
+  height: 158px;
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  background: linear-gradient(270deg, #f8f8f8 16.84%, rgba(248, 248, 248, 0) 100%); }
 
 @media (min-width: 768px) {
   .swiper-container--type {
@@ -1200,6 +1261,9 @@ template {
     padding-bottom: 10px; } }
 
 @media (min-width: 1336px) {
+  .swiper-container--brand {
+    padding-left: 30px;
+    padding-right: 46px; }
   .swiper-container--type {
     padding-top: 10px;
     padding-left: 32px; } }
@@ -1252,15 +1316,32 @@ template {
   overflow: hidden;
   padding-bottom: 20px;
   padding-top: 17px;
+  padding-left: 6px;
   box-sizing: border-box; }
+
+.swiper-container--prices .gradient-right {
+  width: 24px;
+  height: 200px;
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  background: linear-gradient(270deg, #f8f8f8 16.84%, rgba(248, 248, 248, 0) 100%); }
 
 @media (min-width: 540px) {
   .swiper-container--prices {
     padding-right: 15px; } }
 
+@media (min-width: 768px) {
+  .swiper-container--prices {
+    overflow: inherit;
+    padding: 25px 22px 0px 24px; } }
+
+@media (min-width: 1336px) {
+  .swiper-container--prices {
+    padding: 27px 54px 0px 39px; } }
+
 .swiper-slide--prices {
   box-sizing: border-box;
-  min-height: 200px;
   min-width: 257px;
   padding-left: 15px;
   padding-top: 15px;
@@ -1300,19 +1381,15 @@ template {
 .equipment-brand__title {
   margin: 0;
   margin-bottom: 15px;
-  padding: 16px 1px;
+  padding: 16px 16px;
   border-top: 1px solid #d9fff5;
   color: #7e7e82;
   text-transform: uppercase;
   background-image: linear-gradient(61deg, #f8f8f8 0%, #ffffff 98.61%); }
 
-.equipment-brand__brand-list {
-  display: none; }
-
 .equipment-brand__wrapper {
   width: 100%;
-  padding-top: 33px;
-  padding-left: 15px;
+  padding-top: 19px;
   box-sizing: border-box; }
 
 .equipment-brand__more-button {
@@ -1336,7 +1413,6 @@ template {
     display: block;
     margin-top: 10px;
     position: relative;
-    top: 14px;
     left: 24px; }
   .brand-list {
     padding-left: 24px;
@@ -1425,13 +1501,10 @@ template {
       border-radius: 2px;
       transform: rotate(45deg); }
 
-.tech__wrapper {
-  padding-left: 15px; }
-
 .tech__title {
   margin: 0;
   margin-bottom: 15px;
-  padding: 15px 1px;
+  padding: 15px 15px;
   border-top: 1px solid #d9fff5;
   color: #7e7e82;
   text-transform: uppercase;
@@ -1461,12 +1534,11 @@ template {
 
 .prices__wrapper {
   width: 100%;
-  box-sizing: border-box;
-  padding-left: 15px; }
+  box-sizing: border-box; }
 
 .prices__title {
   margin: 0;
-  padding: 15px 1px;
+  padding: 15px 16px;
   border-top: 1px solid #d9fff5;
   color: #7e7e82;
   text-transform: uppercase;
@@ -1505,15 +1577,118 @@ template {
 .prices__table {
   display: none; }
 
+.swiper-pagination {
+  position: relative; }
+
+.price-slider {
+  position: relative;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  box-sizing: border-box; }
+  .price-slider::-webkit-scrollbar {
+    display: none; }
+  .price-slider__card {
+    position: relative;
+    justify-content: space-between;
+    background: #ffffff;
+    border: 1px solid #eaeaea;
+    border-radius: 6px;
+    padding: 0 15px;
+    min-width: 260px;
+    height: 200px;
+    margin: 0 1em 0 0;
+    padding: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.2px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: #1b1c21; }
+
+.price-card__button {
+  font-weight: 700;
+  font-size: 12px;
+  text-align: right;
+  letter-spacing: -0.15px;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 10px 40px 8px 12px;
+  background: #ff3e79;
+  border-radius: 16px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-self: flex-end;
+  position: relative;
+  left: 107px;
+  top: -21px; }
+  .price-card__button::before {
+    position: absolute;
+    content: '';
+    top: 11px;
+    right: 21px;
+    width: 8px;
+    height: 8px;
+    border: 3px solid #ffffff;
+    border-bottom: none;
+    border-left: none;
+    border-radius: 2px;
+    transform: rotate(45deg); }
+  .price-card__button:hover {
+    opacity: 0.5;
+    transition: 0.3s; }
+
+.price-card__service {
+  height: 56px;
+  margin-bottom: 1em; }
+  .price-card__service::before {
+    content: 'Ремонтные услуги';
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #7e7e82;
+    mix-blend-mode: normal;
+    opacity: 0.72;
+    margin-bottom: 4px; }
+
+.price-card__price {
+  margin-bottom: 1em; }
+  .price-card__price::before {
+    content: 'Цена';
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1em;
+    color: #7e7e82;
+    mix-blend-mode: normal;
+    opacity: 0.72;
+    margin-bottom: 4px; }
+
+.price-card__term::before {
+  content: 'Срок';
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1em;
+  color: #7e7e82;
+  mix-blend-mode: normal;
+  opacity: 0.72;
+  margin-bottom: 4px; }
+
 @media (min-width: 768px) {
   .prices__wrapper {
-    padding-top: 33px;
-    padding-left: 20px; }
+    padding-top: 33px; }
   .prices__title {
-    padding: 18px 2px; }
+    padding: 12px 25px; }
   .prices__proposal {
     max-width: 465px;
-    padding-top: 24px;
     padding-left: 23px;
     font-size: 14px;
     font-style: normal;
@@ -1526,19 +1701,91 @@ template {
       .prices__proposal-link::after {
         bottom: 7px; }
   .prices__table {
-    display: table; } }
+    display: table; }
+  .price-card__service {
+    width: 48%; }
+    .price-card__service::before {
+      content: ''; }
+  .price-card__price {
+    width: 10%; }
+    .price-card__price::before {
+      content: ''; }
+  .price-card__term {
+    width: 12%; }
+    .price-card__term::before {
+      content: ''; }
+  .price-card__button::before {
+    position: absolute;
+    content: '';
+    top: 28px;
+    right: 35px;
+    width: 8px;
+    height: 8px;
+    border: 3px solid #ffffff;
+    border-bottom: none;
+    border-left: none;
+    border-radius: 2px;
+    transform: rotate(45deg); }
+  .price-card__button::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: calc(100% - 32px);
+    background-color: #eaeaea;
+    right: 17px;
+    top: 62px; }
+  .price-card .swiper-slide-duplicate {
+    display: none; }
+  .price-slider__card:first-child .price-card__service::before {
+    content: 'Ремонтные услуги';
+    position: absolute;
+    bottom: 80px; }
+  .price-slider__card:first-child .price-card__price::before {
+    content: 'Цена';
+    position: absolute;
+    bottom: 80px; }
+  .price-slider__card:first-child .price-card__term::before {
+    content: 'Срок';
+    position: absolute;
+    bottom: 80px; }
+  .price-slider__card:last-child .price-card__button::after {
+    display: none; } }
+
+.swiper-pagination {
+  position: relative; }
+
+@media (min-width: 768px) {
+  .price-slider {
+    overflow: inherit;
+    transform: translate3d(0px, 0px, 0px) !important;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    border-radius: 6px;
+    margin: 42px 0 24px 0; }
+    .price-slider__card {
+      height: 64px;
+      flex: none;
+      width: 100% !important;
+      display: flex;
+      border: none; }
+      .price-slider__card--hidden768 {
+        display: none; }
+    .price-slider .price-card__button {
+      position: unset; }
+    .price-slider .swiper-pagination {
+      display: none; } }
 
 @media (min-width: 1336px) {
   .prices__wrapper {
-    padding-top: 50px;
-    padding-left: 32px; }
+    padding-top: 50px; }
   .prices__title {
-    padding-left: 0; }
+    padding: 14px 32px; }
   .prices__proposal {
-    padding-left: 0;
-    padding-top: 33px; }
+    padding: 0;
+    padding-left: 31px;
+    padding-top: 9px; }
     .prices__proposal-link {
-      padding-left: 0; } }
+      padding-left: 32px; } }
 
 .table {
   width: 98%;
@@ -1591,6 +1838,7 @@ template {
     left: 278px; } }
 
 .footer {
+  margin-top: 46px;
   background-color: #f8f8f8;
   padding-top: 15px;
   border-top: 1px solid #b8ffec;
@@ -1614,19 +1862,21 @@ template {
       padding-top: 16px; }
 
 @media (min-width: 768px) {
-  .footer__wrapper {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 213px;
-    padding: 5px 24px 24px 24px; }
-  .footer__info {
-    text-align: left; }
-    .footer__info--middle {
-      padding-top: 0;
-      position: relative;
-      top: -9px; }
-    .footer__info--bottom {
-      text-align: end !important; } }
+  .footer {
+    margin-top: 52px; }
+    .footer__wrapper {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 213px;
+      padding: 5px 24px 24px 24px; }
+    .footer__info {
+      text-align: left; }
+      .footer__info--middle {
+        padding-top: 0;
+        position: relative;
+        top: -9px; }
+      .footer__info--bottom {
+        text-align: end !important; } }
 
 @media (min-width: 1336px) {
   .footer {
@@ -1661,7 +1911,7 @@ template {
   background-color: #ffffff;
   z-index: 2; }
   .call--open {
-    z-index: 3;
+    z-index: 7;
     right: 0;
     transition: right 0.7s;
     box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2); }
@@ -1724,7 +1974,7 @@ template {
     color: #ff3e79; }
 
 .call-form__button {
-  margin-left: 58%; }
+  margin-left: 53%; }
 
 @media (min-width: 768px) {
   .call__title {
@@ -1761,6 +2011,7 @@ template {
   background-color: #ffffff;
   z-index: 3; }
   .feedback--open {
+    z-index: 7;
     right: 0;
     transition: right 0.7s;
     box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2); }
@@ -1884,7 +2135,7 @@ template {
     border-bottom-right-radius: 5px;
     background-color: #41f6d7; }
 
-@media (min-width: 768px) {
+@media (min-width: 1336px) {
   .navigation__link--active::before {
     left: -25px; } }
 

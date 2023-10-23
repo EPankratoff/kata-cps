@@ -104,7 +104,7 @@ window.addEventListener('resize', () => {
 let swiperPrices = new Swiper(sliderPrices, {
   slidesPerView: 1,
   spaceBetween: 15,
-  loop: true,
+  loop: false,
   pagination: {
     el: '.swiper-pagination',
     clickable: true
@@ -113,7 +113,7 @@ let swiperPrices = new Swiper(sliderPrices, {
   breakpoints: {
     320: {
       slidesPerView: 1.2,
-      spaceBetween: 10
+      spaceBetween: 19
     },
     540: {
       slidesPerView: 2,
@@ -121,8 +121,7 @@ let swiperPrices = new Swiper(sliderPrices, {
     },
 
     660: {
-      slidesPerView: 2,
-      spaceBetween: 20
+      slidesPerView: 2
     }
   }
 })
@@ -133,7 +132,7 @@ const pageNavigationLinks = document.querySelectorAll(
   '.service__page-navigation_link'
 )
 const brandMoreButton = document.querySelector('.equipment-brand__more-button')
-const brandContainer = document.querySelector('.equipment-brand__brand-list')
+const brandContainer = document.querySelector('.swiper-wrapper--brand')
 
 pageNavigationLinks.forEach((link) => {
   link.addEventListener('click', () => {
@@ -163,11 +162,11 @@ brandMoreButton.addEventListener('click', () => {
   if (brandMoreButton.innerText === 'Показать все') {
     brandMoreButton.innerText = 'Скрыть'
     brandMoreButton.classList.add('more-button--less')
-    brandContainer.classList.add('equipment-brand__brand-list--full')
+    brandContainer.classList.add('swiper-wrapper--full')
   } else {
     brandMoreButton.innerText = 'Показать все'
     brandMoreButton.classList.remove('more-button--less')
-    brandContainer.classList.remove('equipment-brand__brand-list--full')
+    brandContainer.classList.remove('swiper-wrapper--full')
   }
 })
 

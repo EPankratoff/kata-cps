@@ -14,7 +14,7 @@
 
   &--open {
     left: 0;
-    z-index: 2;
+    z-index: 10;
     position: fixed;
     height: 100%;
     width: 100%;
@@ -50,24 +50,31 @@
   &__contact-item {
     margin-right: 15px;
   }
+  &__contact-link {
+    background-color: transparent;
+    cursor: pointer;
+  }
 
   &__bottom-wrapper {
     margin-top: 240px;
   }
 
   &__email {
-    margin: 0;
-    margin-bottom: 10px;
-    padding: 0;
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.2px;
+    color: $text-color-1;
+    margin: 0 0 12px 0;
   }
 
   &__phone {
-    margin: 0;
-    padding: 0;
-    margin-bottom: 10px;
+    display: block;
+    font-weight: 700;
     font-size: 24px;
-    line-height: 32px;
-    font-weight: bold;
+    letter-spacing: -0.6px;
+    color: $text-color-1;
+    margin: 0 26px 10px 0;
   }
 
   &__toggle-lang-list {
@@ -84,8 +91,13 @@
     font-size: inherit;
     text-transform: uppercase;
     background-color: transparent;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
     border: none;
-
+    cursor: pointer;
     &--active {
       color: #7e7e82;
     }
@@ -98,7 +110,7 @@
       width: 320px;
       left: 0;
       margin-left: 0;
-      padding: 25px;
+      // padding: 25px;
     }
 
     &__logo {
@@ -114,7 +126,7 @@
     top: 0;
     left: 0;
     box-sizing: border-box;
-    width: 375px;
+    min-width: 306px;
     padding: 35px 25px 25px;
     background-color: #ffffff;
     transition: none;

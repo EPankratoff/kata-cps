@@ -47,6 +47,17 @@
   }
 }
 
+.contact-list__link {
+  &--phone {
+    background-color: transparent;
+    cursor: pointer;
+  }
+  &--message {
+    background-color: transparent;
+    cursor: pointer;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .header {
     padding: 0 25px;
@@ -88,6 +99,10 @@
     &__item {
       position: relative;
       left: 12px;
+    }
+
+    &__link {
+      background-color: transparent;
     }
 
     &__icon {

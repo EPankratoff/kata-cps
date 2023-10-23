@@ -12,7 +12,7 @@
   z-index: 2;
 
   &--open {
-    z-index: 3;
+    z-index: 7;
     right: 0;
     transition: right 0.7s;
     box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2);
@@ -96,7 +96,7 @@
   }
 
   &__button {
-    margin-left: 58%;
+    margin-left: 53%;
   }
 }
 
