@@ -20,6 +20,9 @@
 
 /*****/
 @media (min-width: $tablet-width) {
+  .gradient-right {
+    display: none;
+  }
   .swiper-container--brand {
     padding-bottom: 0;
   }

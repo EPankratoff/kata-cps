@@ -1787,56 +1787,6 @@ template {
     .prices__proposal-link {
       padding-left: 32px; } }
 
-.table {
-  width: 98%;
-  font-size: 14px;
-  line-height: 18px;
-  border-collapse: collapse; }
-  .table__data {
-    position: relative;
-    padding-top: 23px;
-    padding-bottom: 22px;
-    padding-left: 26px;
-    border-bottom: 2px solid #eaeaea;
-    background-color: #ffffff;
-    border-radius: 6px; }
-    .table__data--order {
-      padding-right: 155px; }
-  .table__header {
-    padding: 33px 0 15px 19px;
-    line-height: 16px;
-    font-weight: normal;
-    text-align: left;
-    color: #7e7e82;
-    opacity: 0.7; }
-    .table__header-price {
-      padding-left: 36px; }
-    .table__header-period {
-      padding-left: 45px; }
-  .table__button {
-    position: absolute;
-    top: 50%;
-    left: 124px;
-    margin-top: -16px; }
-
-@media (min-width: 1024px) {
-  .table__button {
-    left: 222px; } }
-
-@media (min-width: 1336px) {
-  .table {
-    width: 96%; }
-    .table__button {
-      left: 202px; }
-    .table__data--order {
-      padding-right: 181px; }
-    .table__data_free {
-      padding-right: 76px; } }
-
-@media (min-width: 1567px) {
-  .table__button {
-    left: 278px; } }
-
 .footer {
   margin-top: 46px;
   background-color: #f8f8f8;
