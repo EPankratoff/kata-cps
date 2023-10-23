@@ -1159,6 +1159,8 @@ template {
 
 /*****/
 @media (min-width: 768px) {
+  .gradient-right {
+    display: none; }
   .swiper-container--brand {
     padding-bottom: 0; }
   .swiper-wrapper--brand {
