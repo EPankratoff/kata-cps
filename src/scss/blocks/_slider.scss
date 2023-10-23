@@ -21,7 +21,7 @@
 /*****/
 @media (min-width: $tablet-width) {
   .swiper-container--brand .gradient-right {
-    display: none;
+    width: 0;
   }
   .swiper-container--brand {
     padding-bottom: 0;
