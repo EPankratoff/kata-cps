@@ -25,10 +25,12 @@
   }
   .swiper-container--brand {
     padding-bottom: 0;
+    padding-left: 24px;
+    padding-right: 24px;
   }
   .swiper-wrapper--brand {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(239px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
     row-gap: 15px;
     column-gap: 15px;
     box-sizing: border-box;
@@ -40,16 +42,25 @@
   }
   .swiper-wrapper--type {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    row-gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(224px, 1fr));
+    row-gap: 19px;
+    column-gap: 15px;
     box-sizing: border-box;
     height: 164px;
     margin: 0 auto;
-    overflow-y: hidden;
     padding-left: 0;
+
+    &::-webkit-scrollbar {
+      width: 0;
+      background-color: transparent;
+    }
   }
   .swiper-pagination {
     display: none;
+  }
+
+  .slide-brand {
+    width: 100% !important;
   }
 }
 
@@ -142,6 +153,7 @@
 @media (min-width: $tablet-width) {
   .swiper-container--type {
     padding-top: 10px;
+    padding-right: 24px;
     padding-left: 23px;
     padding-bottom: 10px;
   }
@@ -149,19 +161,20 @@
 
 @media (min-width: $desktop-width) {
   .swiper-container--brand {
-    padding-left: 30px;
-    padding-right: 46px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
   .swiper-container--type {
     padding-top: 10px;
     padding-left: 32px;
+    padding-right: 32px;
   }
 }
 
 .swiper-slide--type {
   position: relative;
   box-sizing: border-box;
-  width: 224px;
+  // width: 224px;
   min-height: 158px;
   padding-top: 16px;
   padding-left: 16px;

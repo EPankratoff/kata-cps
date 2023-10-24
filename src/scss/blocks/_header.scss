@@ -34,12 +34,23 @@
     border-radius: 50%;
     cursor: pointer;
     background-image: url(../img/burger.svg);
+    &:hover {
+      opacity: 0.5;
+      transition: 0.3s;
+    }
   }
 
   &__service-list {
     display: flex;
     justify-content: space-between;
     width: 97px;
+  }
+
+  &__service-item {
+    &:hover {
+      opacity: 0.5;
+      transition: 0.3s;
+    }
   }
 
   &__contact-list {
