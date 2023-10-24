@@ -49,7 +49,8 @@ a {
 button {
   padding: 0;
   margin: 0;
-  border: none; }
+  border: none;
+  cursor: pointer; }
 
 ul,
 li {
@@ -717,10 +718,16 @@ template {
     border-radius: 50%;
     cursor: pointer;
     background-image: url(./static/burger.svg); }
+    .header__btn-burger:hover {
+      opacity: 0.5;
+      transition: 0.3s; }
   .header__service-list {
     display: flex;
     justify-content: space-between;
     width: 97px; }
+  .header__service-item:hover {
+    opacity: 0.5;
+    transition: 0.3s; }
   .header__contact-list {
     display: none; }
 
@@ -1162,10 +1169,12 @@ template {
   .swiper-container--brand .gradient-right {
     width: 0; }
   .swiper-container--brand {
-    padding-bottom: 0; }
+    padding-bottom: 0;
+    padding-left: 24px;
+    padding-right: 24px; }
   .swiper-wrapper--brand {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(239px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
     row-gap: 15px;
     -moz-column-gap: 15px;
          column-gap: 15px;
@@ -1177,15 +1186,21 @@ template {
     transform: translate3d(0px, 0, 0) !important; }
   .swiper-wrapper--type {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    row-gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(224px, 1fr));
+    row-gap: 19px;
+    -moz-column-gap: 15px;
+         column-gap: 15px;
     box-sizing: border-box;
     height: 164px;
     margin: 0 auto;
-    overflow-y: hidden;
     padding-left: 0; }
+    .swiper-wrapper--type::-webkit-scrollbar {
+      width: 0;
+      background-color: transparent; }
   .swiper-pagination {
-    display: none; } }
+    display: none; }
+  .slide-brand {
+    width: 100% !important; } }
 
 @media (min-width: 768px) {
   .swiper-wrapper--full {
@@ -1259,21 +1274,22 @@ template {
 @media (min-width: 768px) {
   .swiper-container--type {
     padding-top: 10px;
+    padding-right: 24px;
     padding-left: 23px;
     padding-bottom: 10px; } }
 
 @media (min-width: 1336px) {
   .swiper-container--brand {
-    padding-left: 30px;
-    padding-right: 46px; }
+    padding-left: 32px;
+    padding-right: 32px; }
   .swiper-container--type {
     padding-top: 10px;
-    padding-left: 32px; } }
+    padding-left: 32px;
+    padding-right: 32px; } }
 
 .swiper-slide--type {
   position: relative;
   box-sizing: border-box;
-  width: 224px;
   min-height: 158px;
   padding-top: 16px;
   padding-left: 16px;
@@ -1383,6 +1399,13 @@ template {
 .equipment-brand__title {
   margin: 0;
   margin-bottom: 15px;
+  font-family: TT Lakes;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  text-transform: uppercase;
   padding: 16px 16px;
   border-top: 1px solid #d9fff5;
   color: #7e7e82;
@@ -1509,6 +1532,11 @@ template {
   padding: 15px 15px;
   border-top: 1px solid #d9fff5;
   color: #7e7e82;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.2px;
   text-transform: uppercase;
   background-image: linear-gradient(61deg, #f8f8f8 0%, #ffffff 98.61%); }
 
@@ -1540,6 +1568,11 @@ template {
 
 .prices__title {
   margin: 0;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.2px;
   padding: 15px 16px;
   border-top: 1px solid #d9fff5;
   color: #7e7e82;

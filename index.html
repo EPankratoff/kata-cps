@@ -178,9 +178,9 @@
             </label>
             <textarea class="feedback-form__input feedback-form__textarea" name="message" placeholder="Сообщение"></textarea>
             <p class="feedback-form__agreement">
-              Нажимая “отправить”, вы даете согласие <br><a href="#" class="feedback-form__agreement--important">на обработку персональных данных</a>
+              Нажимая “отправить”, вы даете согласие <br><a href="#" class="feedback-form__agreement--important" title="ссылка на документ об обработке персональных данных">на обработку персональных данных</a>
               и соглашаетесь с нашей политикой
-              <a href="#" class="feedback-form__agreement--important">конфиденциальности</a>
+              <a href="#" class="feedback-form__agreement--important" title="ссылка на документ о политике конфиденциальности">конфиденциальности</a>
             </p>
             <button class="feedback-form__button button--order" type="submit">
               Отправить
@@ -199,9 +199,9 @@
               <input class="call-form__input" type="tel" name="phone" placeholder="Телефон">
             </label>
             <p class="call-form__agreement">
-              Нажимая “отправить”, вы даете согласие <br><span class="call-form__agreement--important">на обработку персональных данных</span>
+              Нажимая “отправить”, вы даете согласие <br><a class="call-form__agreement--important" href="#" title="ссылка на документ об обработке персональных данных">на обработку персональных данных</a>
               и соглашаетесь с нашей политикой
-              <span class="call-form__agreement--important">конфиденциальности</span>
+              <a class="call-form__agreement--important" href="#" title="ссылка на документ о политике конфиденциальности">конфиденциальности</a>
             </p>
             <button class="call-form__button button--order" type="submit">
               Отправить
@@ -294,54 +294,70 @@
 
         <section class="equipment-brand">
           <div class="equipment-brand__wrapper">
-            <p class="equipment-brand__title">
+            <h2 class="equipment-brand__title">
               Ремонт техники различных брендов
-            </p>
+            </h2>
 
             <div class="swiper-container swiper-container--brand">
               <div class="gradient-right"></div>
-              <div class="swiper-wrapper swiper-wrapper--brand">
-                <div class="swiper-slide swiper-slide--brand">
-                  <a class="swiper-slide__link swiper-slide__link--brand" href="#">
-                    <img src="./img/lenovo.svg" alt="Сссылка на сайт компании «Леново»">
-                  </a>
-                </div>
-                <div class="swiper-slide swiper-slide--brand">
-                  <a class="swiper-slide__link swiper-slide__link--brand" href="#">
-                    <img src="./img/samsung.svg" alt="">
-                  </a>
-                </div>
-                <div class="swiper-slide swiper-slide--brand">
-                  <a class="swiper-slide__link swiper-slide__link--brand" href="#">
-                    <img src="./img/apple.svg" alt="">
-                  </a>
-                </div>
-                <div class="swiper-slide swiper-slide--brand">
-                  <a class="swiper-slide__link swiper-slide__link--brand" href="#">
-                    <img src="./img/viewsonic.svg" alt="">
-                  </a>
-                </div>
-                <div class="swiper-slide swiper-slide--brand">
-                  <a class="swiper-slide__link swiper-slide__link--brand" href="#">
-                    <img src="./img/bosch.svg" alt="">
-                  </a>
-                </div>
-                <div class="swiper-slide swiper-slide--brand">
-                  <a class="swiper-slide__link swiper-slide__link--brand" href="#">
-                    <img src="./img/hp.svg" alt="">
-                  </a>
-                </div>
-                <div class="swiper-slide swiper-slide--brand">
-                  <a class="swiper-slide__link swiper-slide__link--brand" href="#">
-                    <img src="./img/acer.svg" alt="">
-                  </a>
-                </div>
-                <div class="swiper-slide swiper-slide--brand">
-                  <a class="swiper-slide__link swiper-slide__link--brand" href="#">
-                    <img src="./img/sony.svg" alt="">
-                  </a>
-                </div>
-              </div>
+              <ul class="swiper-wrapper swiper-wrapper--brand">
+                <li class="swiper-slide slide-brand">
+                  <div class="swiper-slide--brand">
+                    <a class="swiper-slide__link swiper-slide__link--brand" href="#">
+                      <img src="./img/lenovo.svg" alt="Сссылка на сайт компании «Леново»">
+                    </a>
+                  </div>
+                </li>
+                <li class="swiper-slide slide-brand">
+                  <div class="swiper-slide--brand">
+                    <a class="swiper-slide__link swiper-slide__link--brand" href="#">
+                      <img src="./img/samsung.svg" alt="">
+                    </a>
+                  </div>
+                </li>
+                <li class="swiper-slide slide-brand">
+                  <div class="swiper-slide--brand">
+                    <a class="swiper-slide__link swiper-slide__link--brand" href="#">
+                      <img src="./img/apple.svg" alt="">
+                    </a>
+                  </div>
+                </li>
+                <li class="swiper-slide slide-brand">
+                  <div class="swiper-slide--brand">
+                    <a class="swiper-slide__link swiper-slide__link--brand" href="#">
+                      <img src="./img/viewsonic.svg" alt="">
+                    </a>
+                  </div>
+                </li>
+                <li class="swiper-slide slide-brand">
+                  <div class="swiper-slide--brand">
+                    <a class="swiper-slide__link swiper-slide__link--brand" href="#">
+                      <img src="./img/bosch.svg" alt="">
+                    </a>
+                  </div>
+                </li>
+                <li class="swiper-slide slide-brand">
+                  <div class="swiper-slide--brand">
+                    <a class="swiper-slide__link swiper-slide__link--brand" href="#">
+                      <img src="./img/hp.svg" alt="">
+                    </a>
+                  </div>
+                </li>
+                <li class="swiper-slide slide-brand">
+                  <div class="swiper-slide--brand">
+                    <a class="swiper-slide__link swiper-slide__link--brand" href="#">
+                      <img src="./img/acer.svg" alt="">
+                    </a>
+                  </div>
+                </li>
+                <li class="swiper-slide slide-brand">
+                  <div class="swiper-slide--brand">
+                    <a class="swiper-slide__link swiper-slide__link--brand" href="#">
+                      <img src="./img/sony.svg" alt="">
+                    </a>
+                  </div>
+                </li>
+              </ul>
               <div class="swiper-pagination swiper-pagination--brand"></div>
             </div>
             <button class="equipment-brand__more-button more-button" type="button">
@@ -351,39 +367,57 @@
         </section>
         <section class="tech">
           <div class="tech__wrapper">
-            <p class="tech__title"> Ремонт различных видов техники </p>
+            <h2 class="tech__title"> Ремонт различных видов техники </h2>
 
             <div class="swiper-container swiper-container--type">
               <div class="gradient-right"></div>
-              <div class="swiper-wrapper swiper-wrapper--type">
-                <div class="swiper-slide swiper-slide--type tech-swiper">
-                  <a class="swiper-slide__link swiper-slide__link--type" href="#">Ремонт ноутбуков</a>
-                </div>
-                <div class="swiper-slide swiper-slide--type tech-swiper">
-                  <a class="swiper-slide__link swiper-slide__link--type" href="#">Ремонт планшетов</a>
-                </div>
-                <div class="swiper-slide swiper-slide--type tech-swiper">
-                  <a class="swiper-slide__link swiper-slide__link--type" href="#">Ремонт ПК</a>
-                </div>
-                <div class="swiper-slide swiper-slide--type tech-swiper">
-                  <a class="swiper-slide__link swiper-slide__link--type" href="#">Ремонт мониторов</a>
-                </div>
-                <div class="swiper-slide swiper-slide--type tech-swiper">
-                  <a class="swiper-slide__link swiper-slide__link--type" href="#">Ремонт мониторов</a>
-                </div>
-                <div class="swiper-slide swiper-slide--type tech-swiper">
-                  <a class="swiper-slide__link swiper-slide__link--type" href="#">Ремонт мониторов</a>
-                </div>
-                <div class="swiper-slide swiper-slide--type tech-swiper">
-                  <a class="swiper-slide__link swiper-slide__link--type" href="#">Ремонт мониторов</a>
-                </div>
-                <div class="swiper-slide swiper-slide--type tech-swiper">
-                  <a class="swiper-slide__link swiper-slide__link--type" href="#">Ремонт мониторов</a>
-                </div>
-                <div class="swiper-slide swiper-slide--type tech-swiper">
-                  <a class="swiper-slide__link swiper-slide__link--type" href="#">Ремонт мониторов</a>
-                </div>
-              </div>
+              <ul class="swiper-wrapper swiper-wrapper--type">
+                <li class="swiper-slide tech-swiper">
+                  <div class="swiper-slide--type">
+                    <a class="swiper-slide__link swiper-slide__link--type" href="#">Ремонт ноутбуков</a>
+                  </div>
+                </li>
+                <li class="swiper-slide tech-swiper">
+                  <div class="swiper-slide--type">
+                    <a class="swiper-slide__link swiper-slide__link--type" href="#">Ремонт планшетов</a>
+                  </div>
+                </li>
+                <li class="swiper-slide tech-swiper">
+                  <div class="swiper-slide--type">
+                    <a class="swiper-slide__link swiper-slide__link--type" href="#">Ремонт ПК</a>
+                  </div>
+                </li>
+                <li class="swiper-slide tech-swiper">
+                  <div class="swiper-slide--type">
+                    <a class="swiper-slide__link swiper-slide__link--type" href="#">Ремонт мониторов</a>
+                  </div>
+                </li>
+                <li class="swiper-slide tech-swiper">
+                  <div class="swiper-slide--type">
+                    <a class="swiper-slide__link swiper-slide__link--type" href="#">Ремонт мониторов</a>
+                  </div>
+                </li>
+                <li class="swiper-slide tech-swiper">
+                  <div class="swiper-slide--type">
+                    <a class="swiper-slide__link swiper-slide__link--type" href="#">Ремонт мониторов</a>
+                  </div>
+                </li>
+                <li class="swiper-slide tech-swiper">
+                  <div class="swiper-slide--type">
+                    <a class="swiper-slide__link swiper-slide__link--type" href="#">Ремонт мониторов</a>
+                  </div>
+                </li>
+                <li class="swiper-slide tech-swiper">
+                  <div class="swiper-slide--type">
+                    <a class="swiper-slide__link swiper-slide__link--type" href="#">Ремонт мониторов</a>
+                  </div>
+                </li>
+                <li class="swiper-slide tech-swiper">
+                  <div class="swiper-slide--type">
+                    <a class="swiper-slide__link swiper-slide__link--type" href="#">Ремонт мониторов</a>
+                  </div>
+                </li>
+              </ul>
               <div class="swiper-pagination swiper-pagination--type"></div>
             </div>
             <button class="tech__more-button more-button" type="button">
@@ -393,7 +427,7 @@
         </section>
         <section class="prices">
           <div class="prices__wrapper">
-            <p class="prices__title">Цены на услуги</p>
+            <h2 class="prices__title">Цены на услуги</h2>
 
             <div class="container">
               <div class="swiper-container swiper-container--prices">
